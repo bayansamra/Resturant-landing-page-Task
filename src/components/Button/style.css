@@ -1,0 +1,61 @@
+.my-button {
+    background-color: transparent;
+    color: var(--white-1);
+    border: 2px solid var(--white-1);
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 40px;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+}
+
+.my-button:hover {
+    background-color: var(--brown);
+    color: var(--white-1);
+    border: 2px solid var(--white-1);
+}
+
+.my-button-secondary {
+    position: relative;
+    background-color: var(--brown);
+    border: 2px solid var(--brown);
+    padding: 0 80px;
+    font-size: 21px;
+}
+
+.my-button-secondary::before,
+.my-button-secondary::after {
+    content: "";
+    position: absolute;
+    background-color: var(--white-1);
+    top: 50%;
+    width: 35px;
+    height: 2px;
+    transform: translateY(-50%);
+    z-index: 999;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.my-button-secondary::after {
+    right: 30px;
+}
+.my-button-secondary::before {
+    left: 30px;
+}
+
+
+.my-button-secondary:hover {
+    color: var(--white-1);
+}
+
+.my-button-secondary:hover::after {
+    height: 35px;
+    width: 2px;
+    transform: translateY(-50%) translateX(-200px);
+}
+
+.my-button-secondary:hover::before {
+    transform: translateY(-50%) translateX(200px);
+    height: 35px;
+    width: 2px;
+}
