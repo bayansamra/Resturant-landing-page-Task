@@ -1,0 +1,18 @@
+.number-card {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.number-card h2 {
+    color: #FFCE6D;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.number-card p {
+    font-size: 18px;
+    font-weight: 700;
+}

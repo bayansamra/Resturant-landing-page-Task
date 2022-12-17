@@ -1,0 +1,40 @@
+.grid-section {
+    padding: 100px 0;
+}
+
+.grid-section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-section_desc {
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.13em;
+    text-transform: capitalize;
+    line-height: 22px;
+}
+
+.grid-section-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-section-image-container img{
+    max-width: 300px;
+}
+
+@media screen and (max-width:1000px) {
+    .grid-section{
+        padding: 50px;
+    }
+    .grid-section-content {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-section-content>div {
+        margin-top: 50px;
+    }
+}

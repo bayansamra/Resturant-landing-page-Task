@@ -1,0 +1,37 @@
+.special-card {
+    background: rgba(160, 128, 64, 0.3);
+    border: 1px dashed #FFCE6D;
+    width: 100%;
+    padding: 70px 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.special-card:hover{
+    background: rgba(160, 128, 64, 0.5);
+}
+
+.special-card>img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0px auto 16px;
+}
+
+.special-card>h3 {
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: capitalize;
+}
+
+.special-card>p {
+    text-align: justify;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.13em;
+    line-height: 22px;
+    text-transform: capitalize;
+
+}
